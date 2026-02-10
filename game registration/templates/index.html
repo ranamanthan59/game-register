@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Registration</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Game Registration Form</h2>
+
+    <form action="/register" method="post">
+        <label>Full Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Phone</label>
+        <input type="text" name="phone" required>
+
+        <label>Select Game</label>
+        <select name="game" required>
+            <option value="">-- Select Game --</option>
+            <option>Chess</option>
+            <option>Badminton</option>
+            <option>Kabbadi</option>
+            <option>volleyball</option>
+            <option>Football</option>
+            <option>Lagory</option>
+            <option>Table Tennis</option>
+            <option>carrom</option>
+            <option>Long jump</option>
+            <option>shot pull</option>
+            <option>thug of war</option>
+            <option>Cricket(girls)</option>
+        </select>
+
+        <label>Gender</label>
+        <select name="gender" required>
+            <option value="">-- Select Gender --</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
